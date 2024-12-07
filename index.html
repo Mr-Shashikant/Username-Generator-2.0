@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Username Generator 2.0</title>
+</head>
+
+<body>
+    <form class="container">
+        <button type="button" id="info" title="About this webpage">i</button>
+        <h1>Username Generator 2.0 </h1>
+        <label for="username">Enter your name:</label>
+        <input type="text" placeholder="e.g., Shashikant" id="username" required>
+        <div>
+            <label for="typeSelector">Pick a quick style:</label>
+            <select name="typeSelection" id="typeSelector">
+                <option value="withNum">Add Numbers</option>
+                <option value="random">Random Numbers</option>
+                <option value="camel">CamelCase</option>
+                <option value="snake">snake_case</option>
+                <option value="funny">Funny letters</option>
+            </select>
+        </div>
+        <button type="button" onclick="generateUsername()">Generate Username</button>
+        <p id="usernameDisplay">--Your username will appear here!--</p>
+    </form>
+
+    <div id="popup" class="hidden">
+        <div class="popup-content">
+            <button id="close-popup">✖</button>
+            <h2>About This Webpage</h2>
+            <ul>
+                <li>View <a href="https://www.sololearn.com/compiler-playground/W8W9OYP81zaX/?ref=app">Username Generator 1.0</a></li>
+                <li>This webpage offers a range of different varients to generate a username for you.</li>
+                <li>Primarily focused on JavaScript</li>
+                <li>Many concepts of JavaScript are used</li>
+                <li>ChatGPT is used to redesign the look with prompt engineering</li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <footer>Made with 💚 by <a href="https://www.sololearn.com/en/profile/29591511/?ref=app">Shashikant</a></footer>
+</body>
+<script src="script.js"></script>
+
+</html>
